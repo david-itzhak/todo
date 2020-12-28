@@ -1,10 +1,11 @@
+import './search-panel.css';
+
 const SearchPanel = () => {
   const searchPlaceholder = 'Type hire to search';
-  const searchStyle = {
-    fontSize: '25px'
-  }
+
   return <input
-    style={searchStyle}
+    type="text"
+    className="form-control search-input"
     placeholder={searchPlaceholder}/>;
 }
 export default SearchPanel;
